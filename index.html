@@ -18,40 +18,88 @@ Select ONE Additional Feature to Add
   <head>
     <meta charset="utf-8" />
     <title>Unit 13 Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+   <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About Aaliyah</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">T.H.U.G.L.I.F.E</option>
+          <option value="movie2">Coraline</option>
+          <option value="movie3">Sinners</option>
+          <option value="movie4">Girl, Interrupted</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="movie-result">
+      <p id="movie-text"></p>
+
+      <img
+        class="answer"
+        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzL0MuwhE1MSXE9HThOs4MuHl_aXxfH5qRw4IwHcsmXQAbthODXpcl6EH-_rdQtc2zkLXA"
+        width="80"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9SJhm3ttGkylwZtBEqfKEAXbilLdI7Po0MfwuS2J_RWQZ3lfNKU-3h48kip02iGvvSXxq"
+        width="90"
+      />
+      <img
+        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0pz8mAWgAKTC0E7owQN0Y20J3ULLrxqvMnOaoWnWCCNBxWWW8JcbpEDfi1cXiY6_obTxy"
+        width="80"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsV5BMJSeSL41XUIiwWOah6vyFrgRucLb0y8ixzUfuGeZSKrj4MHmnvwooz8mYxHHN7bb1tw"
+        width="80"
+      />
+    </div>
+
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite book series?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Amulet</option>
+          <option value="book2">
+            Miss Peregrines Home For Peculiar Children
+          </option>
+          <option value="book3">Scythe</option>
+          <option value="book4">Demon Slayer</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
-    <div id="book-result"></div>
+    <div id="book-result">
+      <p id="book-text"></p>
+      <img
+        class="correct"
+        src="https://i.ebayimg.com/images/g/qcIAAOSwN7RjE1gC/s-l1200.png"
+        width="80"
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/A1IMtwBUILL.jpg"
+        width="110"
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/61Eds21B9CL._AC_UF1000,1000_QL80_.jpg"
+        width="80"
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/A1vSRATxsiL.jpg"
+        width="110"
+      />
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       //Movie Question jQuery Code
@@ -61,10 +109,10 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        if (answer === "movie2") {
+          $("#movie-result").text("Yas girl period you got it right");
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#movie-result").text("AHHHHAAAAAA WRONG TRY AGAIN");
         }
       });
 
@@ -75,10 +123,10 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "book4") {
+          $("#book-result").text("WOOHOO PARTAYYYY");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#book-result").text("girl try again .");
         }
       });
     </script>
