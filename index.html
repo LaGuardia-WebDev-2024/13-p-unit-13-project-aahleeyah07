@@ -102,6 +102,10 @@ Select ONE Additional Feature to Add
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+     $("#movie-text").hide(); 
+      $("#movie-text").slideDown(1500);
+      $("#book-text").hide(); 
+      $("#book-text").slideDown(1500);
       //Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
